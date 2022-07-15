@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/x-icon" href="notes/pin.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hong Kong</title>
+  </head>
+  <body>
+    <style type="text/css">
+      body {
+        background-color: #212529;
+        color: white;}
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+      .text{
+          margin-top: 4%;
+      }
+      .header{
+        height: 250px;
+        color: #fafafa;
+        background-color: #444;
+      }
+      .swing{
+        margin-top: 5%;
+        margin-left: 30%;
+      }
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grow {
+  width: 100%;
+  margin: 2%;
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 rgba(255, 255, 255, 0.19);
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.5); }
+
+
+.inner-sect{
+  margin: 3% 6%;
+}
+    </style>
+    <div class="container-fluid">
+      <div class=" header row">
+        <div style="text-align: center;" class="col-md-12">
+          <div style="margin-top: 3%" class="row">
+            <h1 id="heading">Financial Hub</h1>
+          </div>
+          <div style="margin-top: 1%" class="row">
+            <h2 id="subHeading">One IFC and Two IFC</h2>
+          </div>
+        </div> 
+      </div>
+      <div class="row inner-sect">
+          <div class="row">
+            <div class="col-md-3">
+              <img class="grow" src="notes/page-1-1.png">
+            </div>
+            <div class="col-md-3">
+              <img class="grow" src="notes/page-1-2.png">
+            </div>
+            <div class="col-md-3">
+              <img class="grow" src="notes/page-1-3.png">
+            </div>
+            <div class="col-md-3">
+              <img class="grow" src="notes/page-1-4.png">
+            </div>
+            <div class="col-md-3">
+              <img class="grow" src="notes/page-1-5.png">
+            </div>
+            <div class="col-md-3">
+              <img class="grow" src="notes/page-1-6.png">
+            </div>
+             <div class="col-md-3">
+              <img class="grow" src="notes/page-1-7.png">
+            </div>
+            <div class="col-md-3">
+              <img class="grow" src="notes/page-1-8.png">
+            </div>
+            <div class="col-md-3">
+              <img class="grow" src="notes/page-1-9.png">
+            </div>
+          </div>
+      </div>
+      <div class="row inner-sect">
+        <div class="col-md-12">
+          <h2>Author's Note</h2>
+        </div>
+        <div class="col-md-12">
+          <p>
+           In the text, <i>a short history of our shores</i>, Xi writes: 
+
+  <br> 'Two companion towers, IFC One and Two rose out of the earth–cold, phallic, curving upwards into an uncircumcised foreskin–in all their silvery pallor.’ (108)<br> 
+
+When asked for further insight into that description, she commented:<br> 
+
+When I wrote that line, I was thinking about how I'd long disliked the buildings and found them a blight on our skyline (of course many said the same of the World Trade Center Towers in NYC when they first went up but when I came to the city to live in the 1980's, those two building oriented me and I came to love them. I still sorely miss them because when 9-11 happened, I was living in Manhattan). 
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="pageLoader.js"></script>
+    <!-- <script type="text/javascript">
+      function pageLoad(num) {
+        page = "page" + num;
+        window.open("pages.html");
+        try{
+          document.getElementById("heading").innerHTML = config[page + "Heading"];
+          document.getElementById("subHeading").innerHTML = config[page + "SubHeading"];
+          document.getElementById("img").src = config[page + "ImgSrc"];
+          document.getElementById("text").innerHTML = config[page + "Text"];
+        } catch(e){
+          pageLoad("page1")
+        }
+      }
+      pageLoad("page1")
+      
+    </script> -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

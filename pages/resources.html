@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="notes/pin.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hong Kong</title>
+  </head>
+  <body>
+    <style type="text/css">
+      body {
+        background-color: #212529;
+        color: white;}
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+      .text{
+          margin-top: 4%;
+      }
+      .header{
+        height: 250px;
+        color: #fafafa;
+        background-color: #444;
+      }
+      .swing{
+        margin-top: 5%;
+        margin-left: 30%;
+      }
+    </style>
+    <div class="container-fluid">
+      <div class=" header row">
+        <div style="text-align: center;" class="col-md-12">
+          <div style="margin-top: 6%" class="row">
+            <h1 id="heading">Resources</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text">
+          <p id="text">
+            IFC One and Two: <br>
+
+Carson, Michael, and John Clark. “Asian Financial Crisis | Federal Reserve History.” Www.federalreservehistory.org, 22 Nov. 2013, www.federalreservehistory.org/essays/asian-financial-crisis. Accessed 6 Apr. 2022. 
+<br>
+‌ 
+<br>
+Chan, Norman. “Hong Kong Monetary Authority - Norman Chan on Asian Financial Crisis: The Battle to Defend Hong Kong’s Financial Stability.” Hong Kong Monetary Authority, 11 Sept. 2019, www.hkma.gov.hk/eng/news-and-media/insight/2019/09/20190911/. Accessed 6 Apr. 2022. 
+<br>
+ <br>
+
+Handover of Hong Kong: <br>
+
+Little, Becky. “How Hong Kong Came under 'One Country, Two Systems' Rule.” History.com, A&E Television Networks, 3 Sept. 2019, https://www.history.com/news/hong-kong-china-great-britain.  <br>
+<br>
+ 
+
+ 
+
+Protests: <br>
+
+Lui, Andrew. “Looking Back at Tiananmen Square.” Taylor & Francis, Peace Review, https://www.tandfonline.com/doi/abs/10.1080/104026500113935. 
+
+ 
+<br><br>
+ 
+
+Religion: <br>
+
+(www.gov.hk), G. H. K. (2022, February 7). Govhk: Fact sheets. GovHK 香港政府一站通. Retrieved April 6, 2022, from https://www.gov.hk/en/about/abouthk/factsheets/ 
+
+ 
+<br>
+Central Intelligence Agency. (n.d.). Central Intelligence Agency. Retrieved April 6, 2022, from https://www.cia.gov/the-world-factbook/countries/hong-kong/ 
+
+ <br>
+<br>
+ 
+
+Further resources: <br>
+
+Audette, Nicole, et al. “Personal Narratives Reduce Negative Attitudes toward Refugees and Immigrant Outgroups: Evidence from Kenya.” Cpd-Us-e1.Wpmucdn, Dartmouth, 18 July 2020, https://cpb-us-e1.wpmucdn.com/sites.dartmouth.edu/dist/9/452/files/2021/08/PersonalNarrativeSomalisKenya_210402.pdf. <br>
+
+Liu, Ming, and Cong Jiang. “Constant Fear, but Lingering Nostalgia: British Press Representations of Post-Colonial Hong Kong 20years On.” Sage, Sagepub, 2018, https://journals.sagepub.com/doi/pdf/10.1177/1750481319868852. <br>
+
+Blakemore, E., & Salinas, T. (2019, August 26). The history of Hong Kong, visualized. Culture. Retrieved March 15, 2022, from https://www.nationalgeographic.com/culture/article/hong-kong-history-visualized <br>
+<br>
+
+Map Credits: <a href="https://www.mapbox.com/about/maps/">©MapBox</a><br>
+<br>
+ 
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="pageLoader.js"></script>
+    <!-- <script type="text/javascript">
+      function pageLoad(num) {
+        page = "page" + num;
+        window.open("pages.html");
+        try{
+          document.getElementById("heading").innerHTML = config[page + "Heading"];
+          document.getElementById("subHeading").innerHTML = config[page + "SubHeading"];
+          document.getElementById("img").src = config[page + "ImgSrc"];
+          document.getElementById("text").innerHTML = config[page + "Text"];
+        } catch(e){
+          pageLoad("page1")
+        }
+      }
+      pageLoad("page1")
+      
+    </script> -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
