@@ -8,7 +8,7 @@ An interactive map for a project to present the history of Hong Kong from a hist
 </ul>
 <h2>Media</h2>
 <p align="center">
-  <img src="www.projects.bet/Media/github/Map/vid1.mp4">
+  <img src="/github/1.gif">
   <br>Scroll Through Video
 </p>
 
